@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ClockTimeTest2</title>
+    <meta charset="utf-8" />
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <script src="/assets/js/jquery2.min.js"></script>
+    <script src="/assets/js/cd3.js"></script>
+    <script src="/assets/js/app.js"></script>
+</head>
+<body>
+    <div id="maincontent">
+        <h1>Configure</h1>
+        <div>
+            <h2>Date format</h2>
+            <p>This will be the formatting used to display the date detail text in the Live Tile. <br />
+                <em>(example date: Sunday, 19th July 1992)</em>
+            </p>
+            <select id="dformat-select">
+                <option id="dformat-custom" value="custom" selected>Custom</option>
+            </select>
+            <input type="text" id="date-format" /><button id="dformat-accept">Accept</button>
+        </div>
+
+        <div>
+            <h2>Time format</h2>
+            <p>
+                This will be the formatting used to display the time header text in the Live Tile. <br />
+                <em>(example time: 5:40 PM / 17:40)</em>
+            </p>
+            <select id="tformat-select">
+                <option id="tformat-custom" value="custom" selected>Custom</option>
+            </select>
+            <input type="text" id="time-format" /><button id="tformat-accept" disabled>Accept</button>
+        </div>
+
+        <div>
+            <button id="test">Test notification</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="5e05b9f6-1e0f-4b46-a552-2c69824a6727" Version="1.0.0.0" Publisher="CN=Thomas" />
+  <Properties>
+    <DisplayName>ClockTimeTest2</DisplayName>
+    <PublisherDisplayName>Thomas</PublisherDisplayName>
+    <Logo>assets\res\icons\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Live Clock" Description="Time and date on a LIve Tile for your convenience." ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="assets\res\icons\Logo.png" Square30x30Logo="assets\res\icons\SmallLogo.png">
+        <m2:DefaultTile ShortName="Live Clock">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="assets\res\icons\splashscreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
